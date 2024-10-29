@@ -1,0 +1,75 @@
+/* Basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Section styling for content */
+  section {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  #home { background-color: #ef83d0; }
+  #about { background-color: #e54dbc; }
+  #services { background-color: #bc2794; }
+  #contact { background-color: #ad298a; }
+  
+  /* Navigation Bar styling */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Initial transparent background */
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #333; /* Default text color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  /* Hover effect on menu items */
+  nav ul li a:hover {
+    color: #3f8426; /* Change to Tomato on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+  
+  /* Scroll-based style change */
+  .scrolled {
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background color when scrolled */
+  }
+  
+  .scrolled ul li a {
+    color: #fff; /* Text color change when scrolled */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      padding: 10px;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
